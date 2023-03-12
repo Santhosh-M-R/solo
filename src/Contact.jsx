@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Stack } from "@mui/material";
 import { Button } from "@mui/material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
