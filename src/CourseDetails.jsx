@@ -48,13 +48,13 @@ const CourseDetails = () => {
 
           <b>All days course details</b>
           <Logo
-            src={weekend}
-            alt="weekend"
+            src={alldays}
+            alt="alldays"
             style={{ alignItems: "center" }}
           ></Logo>
           <b>Only on weekends course details</b>
           <Logo
-            src={alldays}
+            src={weekend}
             alt="weekend"
             style={{ alignItems: "center" }}
           ></Logo>
