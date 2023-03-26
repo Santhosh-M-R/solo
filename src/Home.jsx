@@ -21,7 +21,7 @@ const Message = styled.div`
   }
   > h2{
     text-align: center;
-  }
+  } 
 `;
 
 const Home = () => {
