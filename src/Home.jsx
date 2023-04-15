@@ -1,4 +1,4 @@
-import logo from "./images/logo/stt-logo.jpeg";
+import logo from "./images/logo/stt-logo.jpg";
 import styled from "styled-components";
 
 const Logo = styled.img`
