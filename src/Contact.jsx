@@ -9,15 +9,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 const ContactsMessage = styled.div`
   padding: 20px;
   top: 20px;
-  position: relative;
-  padding 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  > h2 {
-    margin 0;
-  }
   > .contact-info {
     > p{
         display: flex;
@@ -43,6 +34,32 @@ const ContactsMessage = styled.div`
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     }
   }
+  @media only screen and (max-width: 600px) { 
+    position: relative;
+    padding 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    > h2 {
+      margin 0;
+    }
+  }
+
+
+  @media only screen and (min-width: 610px) { 
+    font-size: 20px;
+    position: relative;
+    padding 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    > h2 {
+      margin 0;
+    }
+  }
+  
 `;
 
 const Contact = () => {

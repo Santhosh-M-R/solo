@@ -2,27 +2,42 @@ import styled from "styled-components";
 
 const AboutMessage = styled.div`
   padding: 20px;
-  position: relative;
   top: -50px;
-  padding 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    padding: 0;
-    margin: 0;
-  }
-  >.about-info{
-    padding: 0 20px;
+  @media only screen and (max-width: 600px) { 
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    > b{
-        text-align: center;
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+    >.about-info{
+      padding: 0 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > b{
+          text-align: center;
+      }
+    }
+  }
+  
+
+
+  @media only screen and (min-width: 610px) {
+    padding: 40px;
+    font-size: 20px;
+    display: flex: 
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      text-align: center;
     }
   }
 `;
+
 const About = () => {
   return (
     <>

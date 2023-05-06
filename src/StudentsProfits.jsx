@@ -3,15 +3,19 @@ import * as React from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 const StudentsMessage = styled.div`
-  padding: 20px;
+padding: 20px;
   position: relative;
   top: 30px;
-  padding 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding 10px;
   height: 600px;
+  @media only screen and (min-width: 610px) {  
+    font-size: 30px;
+    padding 40px;
+  }
 `;
 
 const StudentsProfits = () => {

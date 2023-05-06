@@ -6,31 +6,67 @@ import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 const Logo = styled.img`
-  width: 60%;
+  @media only screen and (max-width: 600px) {
+    width: 60%;
+  }
+  @media only screen and (min-width: 610px) {
+    width: 30%;
+  }
 `;
 const CourseMessage = styled.div`
   padding: 20px;
-  position: relative;
-  padding 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    padding: 0;
-    margin: 0;
-  }
-  >.course-info{
-    padding: 0 20px;
-    position: relative;
+  @media only screen and (max-width: 600px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    .timing {
-        padding: 10px;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    position: relative;
+    h2 {
+      padding: 0;
+      margin: 0;
+      text-align: center;
     }
-    > b{
+    > .course-info .daily,
+    .satandsun {
+      padding: 0 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .timing {
+        padding: 10px;
+      }
+      > b {
         text-align: center;
         padding: 10px;
+      }
+    }
+    .registration {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (min-width: 610px) {
+    .registration {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    font-size: 20px;
+    .course-info,
+    .daily,
+    .satandsun {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h2 {
+      text-align: center;
     }
   }
 `;
@@ -46,38 +82,44 @@ const CourseDetails = () => {
             3pm - 4pm
           </p>
 
-          <b>All days course details</b>
-          <Logo
-            src={alldays}
-            alt="alldays"
-            style={{ alignItems: "center" }}
-          ></Logo>
-          <b>Only on weekends course details</b>
-          <Logo
-            src={weekend}
-            alt="weekend"
-            style={{ alignItems: "center" }}
-          ></Logo>
-          <p> For registration message me in whatsapp</p>
-          <p style={{ margin: "0" }}>
-            <ArrowDownwardIcon />
-            <ArrowDownwardIcon />
-            <ArrowDownwardIcon />
-          </p>
-          <Stack direction="row" spacing={2}>
-            <Button
-              variant="contained"
-              href="https://api.whatsapp.com/send/?phone=918778890619&text&app_absent=0"
-              style={{ background: "#00FF00" }}
-              target="__blank"
-              className="message_send"
-            >
-              <WhatsAppIcon />
-              <b style={{ margin: "0", padding: "0 5px", color: "#FFFFFF" }}>
-                Whatsapp
-              </b>
-            </Button>
-          </Stack>
+          <div className="daily">
+            <b>All days course details</b>
+            <Logo
+              src={alldays}
+              alt="alldays"
+              style={{ alignItems: "center" }}
+            ></Logo>
+          </div>
+          <div className="satandsun">
+            <b>Only on weekends course details</b>
+            <Logo
+              src={weekend}
+              alt="weekend"
+              style={{ alignItems: "center" }}
+            ></Logo>
+          </div>
+          <div className="registration">
+            <p> For registration message me in whatsapp</p>
+            <p style={{ margin: "0" }}>
+              <ArrowDownwardIcon />
+              <ArrowDownwardIcon />
+              <ArrowDownwardIcon />
+            </p>
+            <Stack direction="row" spacing={2}>
+              <Button
+                variant="contained"
+                href="https://api.whatsapp.com/send/?phone=918778890619&text&app_absent=0"
+                style={{ background: "#00FF00" }}
+                target="__blank"
+                className="message_send"
+              >
+                <WhatsAppIcon />
+                <b style={{ margin: "0", padding: "0 5px", color: "#FFFFFF" }}>
+                  Whatsapp
+                </b>
+              </Button>
+            </Stack>
+          </div>
         </div>
         <h2 id="contact">_______________</h2>
       </CourseMessage>

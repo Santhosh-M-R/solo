@@ -8,20 +8,59 @@ const Logo = styled.img`
 const Message = styled.div`
   top: -50px;
   padding: 20px;
-  position: relative;
-  .intro, .small-info {
-    padding 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .welcome {
+  @media only screen and (max-width: 600px) {
+    position: relative;
+    .intro, .small-info {
+      padding 10px;
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      .logo-welcome {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      > img {
+        width: 100%;
+      }
+      .welcome {
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    > h2{
+      text-align: center;
+    } 
+  }
+
+  @media only screen and (min-width: 610px) {
+    .logo-welcome {
+      display: flex;
+      justify-content: space-around;
+      >.welcome {
+        text-align: center;
+        font-size: 40px;
+      }
+      > img {
+        width: 20%;
+      }
+    }
+    .who {
+      font-size: 30px;
+      padding: 40px;
+      text-align:center;
+    }
+    .small-info{
+      font-size: 20px;
+      padding: 40px;
+      text-align:center;
+    }
+    h2 {
       text-align: center;
     }
   }
-  > h2{
-    text-align: center;
-  } 
+  
 `;
 
 const Home = () => {
@@ -29,16 +68,18 @@ const Home = () => {
     <>
       <Message>
         <div className="intro">
-          <h2 className="welcome">
-            Welcome <br /> to <br />
-            Solo Trader Tamil
-          </h2>
-          <Logo src={logo} alt="Logo" style={{ alignItems: "center" }}></Logo>
-          <p>
+          <div className="logo-welcome">
+            <p className="welcome">
+              Welcome <br /> to <br />
+              Solo Trader Tamil
+            </p>
+            <Logo src={logo} alt="Logo" style={{ alignItems: "center" }}></Logo>
+          </div>
+          <p className="who">
             This is Santhosh M R, doing trading for two things building my
             wealth through investment and generating passive income from stocks.
           </p>
-          <h2>_______________</h2>
+          <h2 className="start">_______________</h2>
         </div>
         <div className="small-info">
           <h2> Quick intro about me</h2>
