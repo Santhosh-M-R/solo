@@ -81,13 +81,13 @@ const CourseDetails = () => {
         <h2>Course Details</h2>
         <div className="course-info">
           <p> Mode of training : Online via zoom </p>
-          <b>Namme course la two timings eruku</b>
-    
+          <b>Namme course la two timings eruku <br /><br /></b>
+          
           <b className="timing">
             1. All days 9pm to 10pm <br /> <br /> 2. Only on weekends <br/> saturday and sunday <br /> 6am - 7am and
             7am - 8am
           </b>
-          <p> Recording will be available</p>
+          <p> -------- Recording will be available --------</p>
 
         <div className="both-course"> 
 
