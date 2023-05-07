@@ -7,10 +7,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 const Logo = styled.img`
   @media only screen and (max-width: 600px) {
-    width: 60%;
+    width: 80%;
   }
   @media only screen and (min-width: 610px) {
-    width: 30%;
+    width: 50%;
   }
 `;
 const CourseMessage = styled.div`
@@ -65,6 +65,10 @@ const CourseMessage = styled.div`
       align-items: center;
       flex-direction: column;
     }
+    .both-course {
+      display: flex;
+      justify-content: 
+    }
     h2 {
       text-align: center;
     }
@@ -76,12 +80,18 @@ const CourseDetails = () => {
       <CourseMessage>
         <h2>Course Details</h2>
         <div className="course-info">
-          <p>Namme course la two timings eruku</p>
-          <p className="timing">
-            1. All days 9pm to 10pm <br /> 2. Only on weekends 10am - 11am and
-            3pm - 4pm
-          </p>
+          <p> Mode of training : Online via zoom </p>
+          <b>Namme course la two timings eruku</b>
+    
+          <b className="timing">
+            1. All days 9pm to 10pm <br /> <br /> 2. Only on weekends <br/> saturday and sunday <br /> 6am - 7am and
+            7am - 8am
+          </b>
+          <p> Recording will be available</p>
 
+        <div className="both-course"> 
+
+        
           <div className="daily">
             <b>All days course details</b>
             <Logo
@@ -97,6 +107,7 @@ const CourseDetails = () => {
               alt="weekend"
               style={{ alignItems: "center" }}
             ></Logo>
+          </div>
           </div>
           <div className="registration">
             <p> For registration message me in whatsapp</p>
