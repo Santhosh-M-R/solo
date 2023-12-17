@@ -5,6 +5,7 @@ import { Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
 const Logo = styled.img`
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -73,44 +74,170 @@ const CourseMessage = styled.div`
       text-align: center;
     }
   }
+
+  @media only screen and (min-width: 610px) {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 auto;
+    > .heading > p {
+      font-size: 30px;
+    }
+
+    > .timing {
+      padding: 30px 10px 0 30px;
+
+      p {
+        font-size: 30px;
+      }
+    }
+
+    > .class-content {
+      padding-left: 20px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      ul {
+        padding-left: 30px;
+      }
+
+      .guidance {
+        font-size: 30px;
+        padding: 20px;
+      }
+    }
+  }
 `;
+
+
+const CourseContent = styled.div`
+  background: rgb(102, 71, 242);
+  padding: 15px;
+  width: 400px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  > .heading > p {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  > .timing {
+    padding: 20px 5px 0 20px;
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: 25px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+    }
+  }
+  
+  > .class-content {
+    padding-left: 10px;
+    text-align: left;
+
+    h2 {
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    
+    /* Optional: Style individual list items */
+    li {
+      margin-bottom: 5px;
+    }
+
+    .guidance {
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      padding: 15px;
+    }
+  }
+
+  
+`;
+
+
 const CourseDetails = () => {
   return (
     <>
       <CourseMessage>
         <h2>Course Details</h2>
         <div className="course-info">
-          <p> Mode of training : Online via zoom </p>
-          <b>Namme course la two timings eruku <br /><br /></b>
-          
-          <b className="timing">
-            1. All days 9pm to 10pm <br /> <br /> 2. Only on weekends <br/> saturday and sunday <br /> 6am - 7am and
-            7am - 8am
-          </b>
-          <p> -------- Recording will be available --------</p>
-
-        <div className="both-course"> 
-
+          <p>Mode of training: Online via zoom</p>
+          <b>Namme course timings <br /></b>
         
-          <div className="daily">
-            <b>All days course details</b>
-            <Logo
-              src={alldays}
-              alt="alldays"
-              style={{ alignItems: "center" }}
-            ></Logo>
-          </div>
-          <div className="satandsun">
-            <b>Only on weekends course details</b>
-            <Logo
-              src={weekend}
-              alt="weekend"
-              style={{ alignItems: "center" }}
-            ></Logo>
-          </div>
+          <b className="timing">
+            All days 9pm to 10pm <br /> 
+            Everyday classes.... <br /> 
+            Recording will be provided <br />for everyday classes
+          </b>
+          <br /> 
+
+          <div className="both-course"> 
+            {/* <div className="daily">
+              <b>All days course details</b>
+              <Logo
+                src={alldays}
+                alt="alldays"
+                style={{ alignItems: "center" }}
+              ></Logo>
+            </div> */}
+            <CourseContent>
+              <div className="heading">
+                <h2>Solo Trader Tamil</h2>
+                <p>Trading classes</p>
+              </div>
+              <div className="timing">
+                <p>All days classes</p>
+                <p>Timing: 9pm to 10pm</p>
+                <p>Fee: 5000 rs</p>
+                <p>Payment mode: gpay or paytm</p>
+              </div>
+
+              <div className="class-content">
+                <h2>Contents:</h2>
+                <ul>
+                  <li>Basic of stock market</li>
+                  <li>Intraday and swing trading in stocks</li>
+                  <li>Index and stock options</li>
+                  <li>1st candle entry and btst holding</li>
+                  <li>How to handle psychological stuff</li>
+                  <li>Trading setup</li>
+                  <li>Investment things [end to end]</li>
+                  <li>Trend confirmation before market starts</li>
+                  <li>Tips about how the market is trapping</li>
+                  <li>Fundamental and technical analysis in stocks</li>
+                </ul>
+
+                <div className="guidance">Complete guidance and support after classes</div>
+              </div>
+            </CourseContent>
+          
+            {/* <div className="satandsun">
+              <b>Only on weekends course details</b>
+              <Logo
+                src={weekend}
+                alt="weekend"
+                style={{ alignItems: "center" }}
+              ></Logo>
+            </div> */}
           </div>
           <div className="registration">
-            <p> For registration message me in whatsapp</p>
+            <p>For registration message me in whatsapp</p>
             <p style={{ margin: "0" }}>
               <ArrowDownwardIcon />
               <ArrowDownwardIcon />
@@ -137,5 +264,6 @@ const CourseDetails = () => {
     </>
   );
 };
+
 
 export default CourseDetails;
