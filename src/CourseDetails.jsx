@@ -178,7 +178,7 @@ const CourseDetails = () => {
         <h2>Course Details</h2>
         <div className="course-info">
           <p>Mode of training: Online via zoom</p>
-          <b>Namme course timings <br /></b>
+          <b>Namma course timings <br /></b>
         
           <b className="timing">
             All days 9pm to 10pm <br /> 
