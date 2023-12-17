@@ -90,7 +90,6 @@ const CourseDetails = () => {
           <p> -------- Recording will be available --------</p>
 
         <div className="both-course"> 
-
         
           <div className="daily">
             <b>All days course details</b>
