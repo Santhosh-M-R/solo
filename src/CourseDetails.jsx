@@ -204,8 +204,9 @@ const CourseDetails = () => {
               <div className="timing">
                 <p>All days classes</p>
                 <p>Timing: 9pm to 10pm</p>
+                <p>Duration: 10 days classes, After classes full support with students group</p>
                 <p>Fee: 5000 rs</p>
-                <p>Payment mode: gpay or paytm</p>
+                <p>Payment mode: gpay or paytm 8778890619</p>
               </div>
 
               <div className="class-content">
