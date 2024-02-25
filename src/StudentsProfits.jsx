@@ -21,13 +21,19 @@ padding: 20px;
 const StudentsProfits = () => {
   return (
     <StudentsMessage>
-      <h2>Students profits</h2>
-      <p>
-        Collecting and gathering information is in progress soon it will be
-        available here in upcoming days
-      </p>
-      <Box sx={{ display: "flex" }}>
-        <CircularProgress />
+      <h2>My live trade recordings</h2>
+      <div>
+      <iframe
+        src="https://www.instagram.com/reel/C3osP0FPD05/embed/"
+        width="400"
+        height="500"
+        frameborder="0"
+        allowtransparency="true">
+      </iframe>
+      </div> 
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <h3>Wait for upcoming videos....</h3>
+        <CircularProgress/>
       </Box>
     </StudentsMessage>
   );
