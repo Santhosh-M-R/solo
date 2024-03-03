@@ -214,8 +214,9 @@ const CourseDetails = () => {
                 <ul>
                   <li>Basic of stock market</li>
                   <li>Intraday and swing trading in stocks</li>
-                  <li>Index and stock options</li>
-                  <li>1st candle entry and btst holding</li>
+                  <li>Index options and stock options</li>
+                  <li>1st candle entry </li>
+                  <li>BTST holding</li>
                   <li>How to handle psychological stuff</li>
                   <li>Trading setup</li>
                   <li>Investment things [end to end]</li>
@@ -224,7 +225,7 @@ const CourseDetails = () => {
                   <li>Fundamental and technical analysis in stocks</li>
                 </ul>
 
-                <div className="guidance">Complete guidance and support after classes</div>
+                <div className="guidance">Complete guidance and support after classes with students group</div>
               </div>
             </CourseContent>
           
