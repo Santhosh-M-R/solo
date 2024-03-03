@@ -21,10 +21,10 @@ const StudentsMessage = styled.div`
 `;
 
 const StudentsGroup = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between the columns */
+  display: flex;
+  flex-direction: column;
 `;
+
 
 const StudentsProfits = () => {
   return (
