@@ -110,7 +110,7 @@ const Home = () => {
           <p>
             The thing here is when we did this then we will get to know about
             patience, emotions and how to be cool in difficult times, then slowly
-            increased lots in options trading and make it consistency.
+            increased lots in options trading and make it consistency. 
           </p>
         </div>
         <h2 id="about">_______________</h2>
