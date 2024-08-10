@@ -15,7 +15,8 @@ const Logo = styled.img`
   }
 `;
 const CourseMessage = styled.div`
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
+
   @media only screen and (max-width: 600px) {
     display: flex;
       text-align: center;
@@ -61,6 +62,7 @@ const CourseMessage = styled.div`
     .course-info,
     .daily,
     .satandsun {
+      padding-left: 40px;
       display: flex;
       text-align: center;
       align-items: center;

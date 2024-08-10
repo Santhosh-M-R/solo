@@ -7,7 +7,7 @@ const Logo = styled.img`
 
 const Message = styled.div`
   top: -50px;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   @media only screen and (max-width: 600px) {
     position: relative;
     .intro, .small-info {

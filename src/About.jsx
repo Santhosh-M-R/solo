@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const AboutMessage = styled.div`
-  padding: 20px;
+padding: 20px 20px 20px 40px;
   top: -50px;
   @media only screen and (max-width: 600px) { 
     position: relative;

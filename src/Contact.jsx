@@ -7,7 +7,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 const ContactsMessage = styled.div`
-  padding: 20px;
+padding: 20px 20px 20px 40px;
   top: 20px;
   > .contact-info {
     > p{
@@ -143,7 +143,7 @@ const Contact = () => {
               </Stack>
             </div>
 
-            <div className="telegram-investment">
+            {/* <div className="telegram-investment">
               <p>Telegram group for investment doubts</p>
               <p style={{ margin: "0" }}>
                 <ArrowDownwardIcon />
@@ -190,7 +190,7 @@ const Contact = () => {
                   </b>
                 </Button>
               </Stack>
-            </div>
+            </div> */}
           </p>
         </div>
         <h2 id="students-profits">_______________</h2>
