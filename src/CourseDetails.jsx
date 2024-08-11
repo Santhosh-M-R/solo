@@ -329,7 +329,7 @@ const CourseDetails = () => {
             <div className="heading">
               <h3>Solo Trader Tamil</h3>
               <p>Stock market Advanced course </p>
-              <p>Duration: 3 Days <br/>Fee: 4000 rs</p>
+              <p>Duration: 5 Days <br/>Fee: 4000 rs</p>
               <b>Classes will be on <br /> Weekdays and Weekends</b>
               <p className="timing">
                 Weekend timings - 9am to 10am <br />
