@@ -74,6 +74,24 @@ const CourseMessage = styled.div`
     h2 {
       text-align: center;
     }
+
+    > .duration-details {
+      text-align: left; /* Align content to the left */
+      h5 {
+        margin: 0;
+        padding: 0;
+      }
+  
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      
+      b {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 
   @media only screen and (min-width: 610px) {
@@ -127,6 +145,24 @@ const BasicsCourseContent = styled.div`
     margin: 0;
   }
 
+  > .duration-details {
+    text-align: left; /* Align content to the left */
+    h5 {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    b {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   > .timing {
     padding: 20px 5px 0 20px;
     font-size: 15px;
@@ -140,7 +176,7 @@ const BasicsCourseContent = styled.div`
       font-weight: bold;
     }
   }
-  
+
   > .class-content {
     padding-left: 10px;
     text-align: left;
@@ -153,21 +189,22 @@ const BasicsCourseContent = styled.div`
       list-style-type: disc;
       padding-left: 20px;
     }
-    
+
     li {
       margin-bottom: 5px;
       font-size: 15px;
     }
+  }
 
-    .guidance {
-      text-align: center;
-      font-size: 25px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      padding: 15px;
-    }
+  > .guidance {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 15px;
   }
 `;
+
 
 
 const AdvancedCourseContent = styled.div`
@@ -238,21 +275,26 @@ const CourseDetails = () => {
           <p>Mode of training: Online via zoom</p>
 
           <div className="both-course"> 
+
             <BasicsCourseContent>
-            <div className="heading">
-              <h3>Solo Trader Tamil</h3>
-              <p>Stock market basics</p>
-              <p>Fee: 1000 rs</p>
-              <b>Classes will be on weekends</b>
-              <p className="timing">
-                7am to 8am <br />
-                Recording will be provided <br />for every class
-              </p>
-            </div>
+              <div className="heading">
+                <h3>Solo Trader Tamil</h3>
+                <p>Stock Market Basics</p>
+                <div className="duration-details">
+                <p>Duration: 3 Days <br/>
+                Fee: ₹1000 <br/>
+                <b>Weekend Classes</b></p>
+                
+                <p className="timing">
+                  Class Timing: 7am to 8am <br />
+                  Recording will be provided <br />for every class
+                </p>
+                </div>
+              </div>
               <div className="class-content">
                 <h4>Contents:</h4>
                 <ul>
-                  <li><strong>Day 1:</strong> 
+                  <li><strong>Day 1:</strong>
                     <ul>
                       <li>Introduction to IPOs</li>
                       <li>Bull and Bear Market Trends</li>
@@ -270,25 +312,28 @@ const CourseDetails = () => {
                   <li><strong>Day 3:</strong>
                     <ul>
                       <li>Technical Analysis and Chart Reading</li>
-                      <li>Swing Trading Strategies</li>
+                      <li>Swing Trading Tips</li>
                     </ul>
                   </li>
                 </ul>
               </div>
-              <div className="guidance"> -- Note: Community group access only <br/> for advanced course</div>
+              <div className="guidance">
+                -- Note: Community group access only <br /> for advanced course
+              </div>
             </BasicsCourseContent>
+
             <hr/>
             <hr/>
 
             <AdvancedCourseContent>
             <div className="heading">
               <h3>Solo Trader Tamil</h3>
-              <p>Stock market Advance</p>
-              <p>Fee: 4000 rs</p>
+              <p>Stock market Advanced course </p>
+              <p>Duration: 3 Days <br/>Fee: 4000 rs</p>
               <b>Classes will be on <br /> Weekdays and Weekends</b>
               <p className="timing">
-                Weekend timings- 9am to 10am <br />
-                Weekday timings - 9pm to 10pm<br />
+                Weekend timings - 9am to 10am <br />
+                Weekday timings - 9pm to 10pm <br />
                 Recording will be provided <br />for every class
               </p>
             </div>
