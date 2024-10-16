@@ -283,12 +283,12 @@ const CourseDetails = () => {
                 <div className="duration-details">
                 <p>Duration: 3 Days <br/>
                 Fee: ₹1000 <br/>
-                <b>Weekend Classes</b></p>
+                <b>Recording Classes</b></p>
                 
-                <p className="timing">
+                {/* <p className="timing">
                   Class Timing: 7am to 8am <br />
                   Recording will be provided <br />for every class
-                </p>
+                </p> */}
                 </div>
               </div>
               <div className="class-content">
@@ -330,12 +330,13 @@ const CourseDetails = () => {
               <h3>Solo Trader Tamil</h3>
               <p>Stock market Advanced course </p>
               <p>Duration: 5 Days <br/>Fee: 4000 rs</p>
-              <b>Classes will be on <br /> Weekdays and Weekends</b>
+              {/* <b>Classes will be on <br /> Weekdays and Weekends</b>
               <p className="timing">
                 Weekend timings - 9am to 10am <br />
                 Weekday timings - 9pm to 10pm <br />
                 Recording will be provided <br />for every class
-              </p>
+              </p> */}
+              <p>Recording classes</p>
             </div>
             <div className="class-content">
               <h4>Contents:</h4>
