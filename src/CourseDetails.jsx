@@ -19,9 +19,9 @@ const CourseMessage = styled.div`
 
   @media only screen and (max-width: 600px) {
     display: flex;
-      text-align: center;
-      align-items: center;
-      flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     h2 {
       padding: 0;
@@ -69,7 +69,7 @@ const CourseMessage = styled.div`
       flex-direction: column;
     }
     .both-course {
-      justify-content: 
+      justify-content: ;
     }
     h2 {
       text-align: center;
@@ -81,12 +81,12 @@ const CourseMessage = styled.div`
         margin: 0;
         padding: 0;
       }
-  
+
       p {
         margin: 0;
         padding: 0;
       }
-      
+
       b {
         margin: 0;
         padding: 0;
@@ -129,7 +129,6 @@ const CourseMessage = styled.div`
   }
 `;
 
-
 const BasicsCourseContent = styled.div`
   background: rgb(102, 71, 242);
   padding: 15px 15px 30px 15px;
@@ -156,7 +155,7 @@ const BasicsCourseContent = styled.div`
       margin: 0;
       padding: 0;
     }
-    
+
     b {
       margin: 0;
       padding: 0;
@@ -172,7 +171,7 @@ const BasicsCourseContent = styled.div`
       padding: 0;
       text-align: left;
       font-size: 15px;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-weight: bold;
     }
   }
@@ -199,72 +198,69 @@ const BasicsCourseContent = styled.div`
   > .guidance {
     text-align: center;
     font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     padding: 15px;
   }
 `;
-
-
 
 const AdvancedCourseContent = styled.div`
-background: rgb(102, 71, 242);
-padding: 15px 15px 30px 15px;
-width: 400px;
-color: white;
-margin: 0;
-
-border: 2px solid black;
-border-radius: 10px;
-
-> .heading > p {
-  font-size: 20px;
-  padding: 0;
+  background: rgb(102, 71, 242);
+  padding: 15px 15px 30px 15px;
+  width: 400px;
+  color: white;
   margin: 0;
-}
 
-> .timing {
-  padding: 20px 5px 0 20px;
-  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
 
-  p {
-    margin: 0;
+  > .heading > p {
+    font-size: 20px;
     padding: 0;
-    text-align: left;
+    margin: 0;
+  }
+
+  > .timing {
+    padding: 20px 5px 0 20px;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+    }
   }
-}
 
-> .class-content {
-  padding-left: 10px;
-  text-align: left;
-
-  h2 {
+  > .class-content {
+    padding-left: 10px;
     text-align: left;
-  }
 
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 5px;
-    font-size: 15px;
-  }
+    h2 {
+      text-align: left;
+    }
 
-  .guidance {
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    padding: 15px;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    .guidance {
+      text-align: center;
+      font-size: 25px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      padding: 15px;
+    }
   }
-}
 `;
-
 
 const CourseDetails = () => {
   return (
@@ -273,28 +269,31 @@ const CourseDetails = () => {
         <h2>Course Details</h2>
         <div className="course-info">
           <p>Mode of training: Online via zoom</p>
+          <p>Either you can take live classes or recorded classes</p>
 
-          <div className="both-course"> 
-
-            <BasicsCourseContent>
+          <div className="live-course">
+            <AdvancedCourseContent>
               <div className="heading">
                 <h3>Solo Trader Tamil</h3>
-                <p>Stock Market Basics</p>
-                <div className="duration-details">
-                <p>Duration: 3 Days <br/>
-                Fee: ₹1000 <br/>
-                <b>Recording Classes</b></p>
-                
-                {/* <p className="timing">
-                  Class Timing: 7am to 8am <br />
-                  Recording will be provided <br />for every class
-                </p> */}
-                </div>
+                <p>Stock market end to end live course </p>
+                <p>
+                  Duration: 6 Days <br />
+                  Fee: 5000 rs
+                </p>
+                <b>
+                  Classes will be on <br /> Friday, saturday, sunday and monday
+                </b>
+                <p className="timing">
+                  Timings - 9pm to 10pm <br />
+                  Recording will be provided <br />
+                  for every class
+                </p>
               </div>
               <div className="class-content">
                 <h4>Contents:</h4>
                 <ul>
-                  <li><strong>Day 1:</strong>
+                  <li>
+                    <strong>Day 1:</strong>
                     <ul>
                       <li>Introduction to IPOs</li>
                       <li>Bull and Bear Market Trends</li>
@@ -302,14 +301,91 @@ const CourseDetails = () => {
                       <li>How to Buy/Sell Shares</li>
                     </ul>
                   </li>
-                  <li><strong>Day 2:</strong>
+                  <li>
+                    <strong>Day 2:</strong>
+                    <ul>
+                      <li>Understanding How Investments Work</li>
+                      <li>SIP vs. Lumpsum Investments</li>
+                      <li>Investment During Bear Market/Stock Market Crash</li>
+                      <li>Long-Term Investment in Stocks and Mutual Funds</li>
+                      <li>Technical Analysis and Chart Reading</li>
+                      <li>Fundamental Analysis of Stocks</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 3:</strong>
+                    <ul>
+                      <li>Options Basics + Double the Money Concept</li>
+                      <li>Options - Trade Setup - Groww 4 chart</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 4:</strong>
+                    <ul>
+                      <li>OI tool</li>
+                      <li>Market conditions</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 5:</strong>
+                    <ul>
+                      <li>Level based entries</li>
+                      <li>Options - BTST Strategy</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 6:</strong>
+                    <ul>
+                      <li>Volume-Based Swing Setup</li>
+                      <li>Swing Screener</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div className="guidance">
+                Complete guidance and support after classes with students group
+              </div>
+            </AdvancedCourseContent>
+          </div>
+
+          <hr />
+          <hr />
+
+          <div className="both-course">
+            <BasicsCourseContent>
+              <div className="heading">
+                <h3>Solo Trader Tamil</h3>
+                <p>Stock Market Basics</p>
+                <div className="duration-details">
+                  <p>
+                    Duration: 3 Days <br />
+                    Fee: ₹1000 <br />
+                    <b>Recorded Classes</b>
+                  </p>
+                </div>
+              </div>
+              <div className="class-content">
+                <h4>Contents:</h4>
+                <ul>
+                  <li>
+                    <strong>Day 1:</strong>
+                    <ul>
+                      <li>Introduction to IPOs</li>
+                      <li>Bull and Bear Market Trends</li>
+                      <li>Stock Market Crashes/Corrections</li>
+                      <li>How to Buy/Sell Shares</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 2:</strong>
                     <ul>
                       <li>Understanding How Investments Work</li>
                       <li>SIP vs. Lumpsum Investments</li>
                       <li>Fundamental Analysis of Stocks</li>
                     </ul>
                   </li>
-                  <li><strong>Day 3:</strong>
+                  <li>
+                    <strong>Day 3:</strong>
                     <ul>
                       <li>Technical Analysis and Chart Reading</li>
                       <li>Swing Trading Tips</li>
@@ -322,63 +398,65 @@ const CourseDetails = () => {
               </div>
             </BasicsCourseContent>
 
-            <hr/>
-            <hr/>
+            <hr />
+            <hr />
 
             <AdvancedCourseContent>
-            <div className="heading">
-              <h3>Solo Trader Tamil</h3>
-              <p>Stock market Advanced course </p>
-              <p>Duration: 5 Days <br/>Fee: 4000 rs</p>
-              {/* <b>Classes will be on <br /> Weekdays and Weekends</b>
-              <p className="timing">
-                Weekend timings - 9am to 10am <br />
-                Weekday timings - 9pm to 10pm <br />
-                Recording will be provided <br />for every class
-              </p> */}
-              <p>Recording classes</p>
-            </div>
-            <div className="class-content">
-              <h4>Contents:</h4>
-              <ul>
-                <li><strong>Day 1:</strong> 
-                  <ul>
-                    <li>Options Basics + Double the Money Concept</li>
-                    <li>Options - Trade Setup 1</li>
-                  </ul>
-                </li>
-                <li><strong>Day 2:</strong>
-                  <ul>
-                    <li>Options - Trade Setup 2</li>
-                    <li>Options - Gap Up/Down Strategy</li>
-                  </ul>
-                </li>
-                <li><strong>Day 3:</strong>
-                  <ul>
-                    <li>Options - BTST Strategy</li>
-                    <li>Options - OI Data Manipulation</li>
-                  </ul>
-                </li>
-                <li><strong>Day 4:</strong>
-                  <ul>
-                    <li>Investment During Bear Market/Stock Market Crash</li>
-                    <li>Long-Term Investment in Stocks and Mutual Funds</li>
-                  </ul>
-                </li>
-                <li><strong>Day 5:</strong>
-                  <ul>
-                    <li>Volume-Based Swing Setup</li>
-                    <li>Swing Screener</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div className="guidance">Complete guidance and support after classes with students group</div>
+              <div className="heading">
+                <h3>Solo Trader Tamil</h3>
+                <p>Stock market Advanced course </p>
+                <p>
+                  Duration: 5 Days <br />
+                  Fee: 4000 rs
+                </p>
+                <b>Recorded classes</b>
+              </div>
+              <div className="class-content">
+                <h4>Contents:</h4>
+                <ul>
+                  <li>
+                    <strong>Day 1:</strong>
+                    <ul>
+                      <li>Options Basics + Double the Money Concept</li>
+                      <li>Options - Trade Setup 1</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 2:</strong>
+                    <ul>
+                      <li>Options - Trade Setup 2</li>
+                      <li>Options - Gap Up/Down Strategy</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 3:</strong>
+                    <ul>
+                      <li>Options - BTST Strategy</li>
+                      <li>Options - OI Data Manipulation</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 4:</strong>
+                    <ul>
+                      <li>Investment During Bear Market/Stock Market Crash</li>
+                      <li>Long-Term Investment in Stocks and Mutual Funds</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 5:</strong>
+                    <ul>
+                      <li>Volume-Based Swing Setup</li>
+                      <li>Swing Screener</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div className="guidance">
+                Complete guidance and support after classes with students group
+              </div>
             </AdvancedCourseContent>
           </div>
 
-
-          
           <div className="registration">
             <p>For registration message me in whatsapp</p>
             <p style={{ margin: "0" }}>
@@ -407,6 +485,5 @@ const CourseDetails = () => {
     </>
   );
 };
-
 
 export default CourseDetails;
