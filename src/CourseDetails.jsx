@@ -278,7 +278,7 @@ const CourseDetails = () => {
                 <p>Stock market end to end live course </p>
                 <p>
                   Duration: 6 Days <br />
-                  Fee: 5000 rs
+                  Fee: 6000 rs
                 </p>
                 <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
@@ -343,7 +343,7 @@ const CourseDetails = () => {
                 </ul>
               </div>
               <div className="guidance">
-                Complete guidance and support after classes with students group
+                Complete guidance and support in batch group for 2 months
               </div>
             </AdvancedCourseContent>
           </div>
@@ -359,7 +359,7 @@ const CourseDetails = () => {
                 <div className="duration-details">
                   <p>
                     Duration: 3 Days <br />
-                    Fee: ₹1000 <br />
+                    Fee: ₹1500 <br />
                     <b>Recorded Classes</b>
                   </p>
                 </div>
@@ -394,7 +394,7 @@ const CourseDetails = () => {
                 </ul>
               </div>
               <div className="guidance">
-                -- Note: Community group access only <br /> for advanced course
+                Note: Batch group support only for advanced or end to end live course
               </div>
             </BasicsCourseContent>
 
@@ -407,7 +407,7 @@ const CourseDetails = () => {
                 <p>Stock market Advanced course </p>
                 <p>
                   Duration: 5 Days <br />
-                  Fee: 4000 rs
+                  Fee: 5000 rs
                 </p>
                 <b>Recorded classes</b>
               </div>
@@ -452,10 +452,24 @@ const CourseDetails = () => {
                 </ul>
               </div>
               <div className="guidance">
-                Complete guidance and support after classes with students group
+                Complete guidance and support in batch group for 2 months
               </div>
             </AdvancedCourseContent>
+
+            <hr />
+
+            <AdvancedCourseContent>
+              <h4>
+                
+                Those enrolled in advanced course or end to end live classes
+                furthur students community support and <br></br> STT - Options group support
+                <br></br>
+                Fee: ₹4,000 (one-time payment only) Get lifetime access
+              </h4>
+            </AdvancedCourseContent>
           </div>
+
+
 
           <div className="registration">
             <p>For registration message me in whatsapp</p>
