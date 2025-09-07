@@ -269,7 +269,7 @@ const CourseDetails = () => {
         <h2>Course Details</h2>
         <div className="course-info">
           <p>Mode of training: Online via zoom</p>
-          <p>Either you can take live classes or recorded classes</p>
+          {/* <p>Either you can take live classes or recorded classes</p> */}
 
           <div className="live-course">
             <AdvancedCourseContent>
@@ -343,7 +343,15 @@ const CourseDetails = () => {
                 </ul>
               </div>
               <div className="guidance">
-                Complete guidance and support in batch group for 2 months
+              <br></br>
+                ------------------------------------------
+                <br></br>
+                Guidance and support in batch group only for 2 months
+                <br></br>
+                ------------------------------------------
+                <br></br>
+                For furthur Solo Trader Tamil community support 
+                check One time premium subscription
               </div>
             </AdvancedCourseContent>
           </div>
@@ -352,7 +360,7 @@ const CourseDetails = () => {
           <hr />
 
           <div className="both-course">
-            <BasicsCourseContent>
+            {/* <BasicsCourseContent>
               <div className="heading">
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock Market Basics</p>
@@ -396,12 +404,12 @@ const CourseDetails = () => {
               <div className="guidance">
                 Note: Batch group support only for advanced or end to end live course
               </div>
-            </BasicsCourseContent>
+            </BasicsCourseContent> */}
 
             <hr />
             <hr />
 
-            <AdvancedCourseContent>
+            {/* <AdvancedCourseContent>
               <div className="heading">
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market Advanced course </p>
@@ -456,15 +464,22 @@ const CourseDetails = () => {
               </div>
             </AdvancedCourseContent>
 
-            <hr />
+            <hr /> */}
 
             <AdvancedCourseContent>
               <h4>
-                
-                Those enrolled in advanced course or end to end live classes
-                furthur students community support and <br></br> STT - Options group support
+                For furthur Solo Trader Tamil students community support
+                <br></br>
+                One time premium subscription
                 <br></br>
                 Fee: ₹4,000 (one-time payment only) Get lifetime access
+                <br></br>
+                Solo Trader Tamil community includes three groups
+                <ul className="community">
+                  <li>STT - Common [General information and two weeks once sunday morning 11.30 am weekend meeting]</li>
+                  <li>STT - Options [Everyday levels info and one entry info will be posted]</li>
+                  <li>STT - Swing [Stocks which are ready to take swing entries will be posted]</li>
+                </ul>
               </h4>
             </AdvancedCourseContent>
           </div>
