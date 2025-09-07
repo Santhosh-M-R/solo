@@ -37,8 +37,30 @@ const navlinks = [
   "students-profits",
 ];
 function DrawerAppBar(props) {
-  const { window } = props;
+  const { window: windowProp } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [active, setActive] = React.useState("home");
+
+  React.useEffect(() => {
+    const handler = () => {
+      const toolbar = document.querySelector('.MuiToolbar-root');
+      const offset = toolbar ? toolbar.offsetHeight + 8 : 72;
+      let current = "home";
+      navlinks.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) {
+          const top = el.getBoundingClientRect().top - offset;
+          if (top <= 0) {
+            current = id;
+          }
+        }
+      });
+      setActive(current);
+    };
+    handler();
+    window.addEventListener('scroll', handler, { passive: true });
+    return () => window.removeEventListener('scroll', handler);
+  }, []);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -53,8 +75,31 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item, i) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <LinkTag href={`#${navlinks[i]}`}>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              selected={active === navlinks[i]}
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.getElementById(navlinks[i]);
+                if (target) {
+                  const toolbar = document.querySelector('.MuiToolbar-root');
+                  const offset = toolbar ? toolbar.offsetHeight : 64;
+                  const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                  window.scrollTo({ top, behavior: 'smooth' });
+                }
+                setMobileOpen(false);
+              }}
+            >
+              <LinkTag
+                href={`#${navlinks[i]}`}
+                aria-current={active === navlinks[i] ? "page" : undefined}
+                style={{
+                  width: '100%',
+                  color: active === navlinks[i] ? "#6647F2" : "inherit",
+                  fontWeight: active === navlinks[i] ? 700 : 500,
+                  display: 'block'
+                }}
+              >
                 <ListItemText primary={item} />
               </LinkTag>
             </ListItemButton>
@@ -65,7 +110,7 @@ function DrawerAppBar(props) {
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    windowProp !== undefined ? () => windowProp().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }} id="home">
@@ -90,8 +135,25 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, i) => (
-              <LinkTag href={`#${navlinks[i]}`}>
-                <Button key={item} sx={{ color: "#fff" }}>
+              <LinkTag href={`#${navlinks[i]}`} key={item}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById(navlinks[i]);
+                  if (target) {
+                    const toolbar = document.querySelector('.MuiToolbar-root');
+                    const offset = toolbar ? toolbar.offsetHeight : 64;
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                  }
+                }}
+              >
+                <Button
+                  sx={{
+                    color: active === navlinks[i] ? "#FFE082" : "#fff",
+                    fontWeight: active === navlinks[i] ? 700 : 500,
+                  }}
+                  aria-current={active === navlinks[i] ? "page" : undefined}
+                >
                   {item}
                 </Button>
               </LinkTag>

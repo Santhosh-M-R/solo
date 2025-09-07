@@ -3,71 +3,103 @@ import styled from "styled-components";
 
 const Logo = styled.img`
   width: 60%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 `;
 
 const Message = styled.div`
   top: -50px;
-  padding: 20px 20px 20px 40px;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .section-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+  }
+
+  .intro, .small-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo-welcome {
+    display:flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome {
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .who {
+    font-size: 22px;
+    padding: 16px 0 0 0;
+    text-align:center;
+    margin: 0;
+  }
+
+  .small-info{
+    font-size: 18px;
+    text-align:left;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 8px 0 0 0;
+  }
+
   @media only screen and (max-width: 600px) {
     position: relative;
-    .intro, .small-info {
-      padding 10px;
-      display: flex;
+    padding: 20px;
+    .logo-welcome {
       flex-direction: column;
-      align-items: center;
-      .logo-welcome {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      > img {
-        width: 100%;
-      }
-      .welcome {
-        align-items: center;
-        text-align: center;
-        font-size: 30px;
-      }
     }
     > h2{
       text-align: center;
-    } 
+    }
   }
 
   @media only screen and (min-width: 610px) {
     .logo-welcome {
-      display: flex;
-      justify-content: space-around;
-      >.welcome {
-        text-align: center;
-        font-size: 40px;
-      }
-      > img {
-        width: 20%;
-      }
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+    }
+    > .intro .welcome {
+      text-align: center;
+      font-size: 42px;
     }
     .who {
-      font-size: 30px;
-      padding: 40px;
-      text-align:center;
+      font-size: 28px;
+      padding: 16px 24px;
     }
     .small-info{
       font-size: 20px;
-      padding: 40px;
-      text-align:center;
-    }
-    h2 {
-      text-align: center;
+      padding: 8px 24px 24px 24px;
     }
   }
-  
 `;
 
 const Home = () => {
   return (
     <>
       <Message>
-        <div className="intro">
+        <div className="intro section-card">
           <div className="logo-welcome">
             <p className="welcome">
               Welcome <br /> to <br />
@@ -81,7 +113,7 @@ const Home = () => {
           </p>
           <h2 className="start">_______________</h2>
         </div>
-        <div className="small-info">
+        <div className="small-info section-card">
           <h2> Quick intro about me</h2>
           <h3> How i become a trader instead of investor?</h3>
           <p>
@@ -101,12 +133,14 @@ const Home = () => {
             concept and did that in almost 20 days with capital of 7k.
           </p>
           <h3>After double the money concept how it changed me?</h3>
-          <p>
-            Double the money means for example taking 5% profit everyday with
-            capital of 5k for 20 days.
+          <div>
+            <p>
+              Double the money means for example taking 5% profit everyday with
+              capital of 5k for 20 days.
+            </p>
             <p>5% * 20 days = 100 %</p>
             <p>250 rs * 20 days = 5000 rs</p>
-          </p>
+          </div>
           <p>
             The thing here is when we did this then we will get to know about
             patience, emotions and how to be cool in difficult times, then slowly

@@ -1,8 +1,21 @@
 import styled from "styled-components";
 
 const AboutMessage = styled.div`
-padding: 20px 20px 20px 40px;
+  padding: 24px;
   top: -50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+  }
+
   @media only screen and (max-width: 600px) { 
     position: relative;
     display: flex;
@@ -13,7 +26,6 @@ padding: 20px 20px 20px 40px;
       margin: 0;
     }
     >.about-info{
-      padding: 0 20px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -23,17 +35,20 @@ padding: 20px 20px 20px 40px;
       }
     }
   }
-  
-
 
   @media only screen and (min-width: 610px) {
     padding: 40px;
     font-size: 20px;
-    display: flex: 
+    display: flex;
     flex-direction: column;
     text-align: center;
     h2 {
       text-align: center;
+    }
+    .about-info{
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.6;
     }
   }
 `;
@@ -43,7 +58,7 @@ const About = () => {
     <>
       <AboutMessage>
         <h2>About</h2>
-        <div className="about-info">
+        <div className="about-info card">
           <p>
             We <b>Solo Trader Tamil</b> offering complete beginner to advanced
             course in tamil to make everyone to earn money in trading

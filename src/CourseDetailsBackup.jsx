@@ -292,6 +292,111 @@ const CourseDetails = () => {
           <hr />
 
           <div className="both-course">
+            {/* <BasicsCourseContent>
+              <div className="heading">
+                <h3>Solo Trader Tamil</h3>
+                <p>Stock Market Basics</p>
+                <div className="duration-details">
+                  <p>
+                    Duration: 3 Days <br />
+                    Fee: ₹1500 <br />
+                    <b>Recorded Classes</b>
+                  </p>
+                </div>
+              </div>
+              <div className="class-content">
+                <h4>Contents:</h4>
+                <ul>
+                  <li>
+                    <strong>Day 1:</strong>
+                    <ul>
+                      <li>Introduction to IPOs</li>
+                      <li>Bull and Bear Market Trends</li>
+                      <li>Stock Market Crashes/Corrections</li>
+                      <li>How to Buy/Sell Shares</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 2:</strong>
+                    <ul>
+                      <li>Understanding How Investments Work</li>
+                      <li>SIP vs. Lumpsum Investments</li>
+                      <li>Fundamental Analysis of Stocks</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 3:</strong>
+                    <ul>
+                      <li>Technical Analysis and Chart Reading</li>
+                      <li>Swing Trading Tips</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div className="guidance">
+                Note: Batch group support only for advanced or end to end live course
+              </div>
+            </BasicsCourseContent> */}
+
+            <hr />
+            <hr />
+
+            {/* <AdvancedCourseContent>
+              <div className="heading">
+                <h3>Solo Trader Tamil</h3>
+                <p>Stock market Advanced course </p>
+                <p>
+                  Duration: 5 Days <br />
+                  Fee: 5000 rs
+                </p>
+                <b>Recorded classes</b>
+              </div>
+              <div className="class-content">
+                <h4>Contents:</h4>
+                <ul>
+                  <li>
+                    <strong>Day 1:</strong>
+                    <ul>
+                      <li>Options Basics + Double the Money Concept</li>
+                      <li>Options - Trade Setup 1</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 2:</strong>
+                    <ul>
+                      <li>Options - Trade Setup 2</li>
+                      <li>Options - Gap Up/Down Strategy</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 3:</strong>
+                    <ul>
+                      <li>Options - BTST Strategy</li>
+                      <li>Options - OI Data Manipulation</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 4:</strong>
+                    <ul>
+                      <li>Investment During Bear Market/Stock Market Crash</li>
+                      <li>Long-Term Investment in Stocks and Mutual Funds</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Day 5:</strong>
+                    <ul>
+                      <li>Volume-Based Swing Setup</li>
+                      <li>Swing Screener</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div className="guidance">
+                Complete guidance and support in batch group for 2 months
+              </div>
+            </AdvancedCourseContent>
+
+            <hr /> */}
 
             <AdvancedCourseContent>
               <h4>
