@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import weekend from "./images/logo/weekend.jpeg";
 import alldays from "./images/logo/alldays.jpeg";
+import community from "./images/Community/community.jpeg";
 import { Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -295,13 +296,17 @@ const CourseDetails = () => {
 
             <AdvancedCourseContent>
               <h4>
-                For furthur Solo Trader Tamil students community support
+                Furthur Solo Trader Tamil students community support
                 <br></br>
                 One time premium subscription
                 <br></br>
-                Fee: ₹4,000 (one-time payment only) Get lifetime access
+                <s>Fee: ₹4,000 (one-time payment only) Get lifetime access</s>
+                <br></br>
+                <strong style={{color: '#00FF00', fontSize: '18px'}}>If you are registering in September 19th batch, it will be FREE!</strong>
                 <br></br>
                 Solo Trader Tamil community includes three groups
+                <br></br>
+                <img src={community} alt="Community" style={{width: '100%', maxWidth: '300px', height: 'auto', margin: '10px 0', borderRadius: '8px'}} />
                 <ul className="community">
                   <li>STT - Common [General information and two weeks once sunday morning 11.30 am weekend meeting]</li>
                   <li>STT - Options [Everyday levels info and one entry info will be posted]</li>
