@@ -302,7 +302,7 @@ const CourseDetails = () => {
                 <br></br>
                 <s>Fee: ₹4,000 (one-time payment only) Get lifetime access</s>
                 <br></br>
-                <strong style={{color: '#00FF00', fontSize: '18px'}}>If you are registering in September 19th batch, it will be FREE!</strong>
+                <strong style={{color: '#00FF00', fontSize: '18px'}}>If you are registering in October 10th batch, it will be FREE!</strong>
                 <br></br>
                 Solo Trader Tamil community includes three groups
                 <br></br>
