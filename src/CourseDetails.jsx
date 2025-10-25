@@ -34,7 +34,8 @@ const CourseMessage = styled.div`
     gap: 24px;
   }
 
-  .live-course, .both-course {
+  .live-course,
+  .both-course {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -50,12 +51,15 @@ const CourseMessage = styled.div`
 
   @media only screen and (max-width: 600px) {
     position: relative;
-    .timing { padding: 10px; }
+    .timing {
+      padding: 10px;
+    }
   }
 
   @media only screen and (min-width: 610px) {
     font-size: 18px;
-    .live-course, .both-course {
+    .live-course,
+    .both-course {
       grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     }
   }
@@ -67,9 +71,9 @@ const BasicsCourseContent = styled.div`
   width: 100%;
   color: white;
   margin: 0;
-  border: 2px solid rgba(0,0,0,0.15);
+  border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 
   > .heading > p {
     font-size: 20px;
@@ -143,9 +147,9 @@ const AdvancedCourseContent = styled.div`
   width: 100%;
   color: white;
   margin: 0;
-  border: 2px solid rgba(0,0,0,0.15);
+  border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 
   > .heading > p {
     font-size: 20px;
@@ -276,15 +280,15 @@ const CourseDetails = () => {
                 </ul>
               </div>
               <div className="guidance">
-              <br></br>
-                ------------------------------------------
                 <br></br>
+                ------------------------------------------
+                {/* <br></br>
                 Guidance and support in batch group only for 2 months
-                <br></br>
+                <br></br> */}
                 ------------------------------------------
                 <br></br>
-                For furthur Solo Trader Tamil community support 
-                check One time premium subscription
+                For furthur Solo Trader Tamil community support check One time
+                premium subscription
               </div>
             </AdvancedCourseContent>
           </div>
@@ -293,7 +297,6 @@ const CourseDetails = () => {
           <hr />
 
           <div className="both-course">
-
             <AdvancedCourseContent>
               <h4>
                 Furthur Solo Trader Tamil students community support
@@ -302,21 +305,41 @@ const CourseDetails = () => {
                 <br></br>
                 <s>Fee: ₹4,000 (one-time payment only) Get lifetime access</s>
                 <br></br>
-                <strong style={{color: '#00FF00', fontSize: '18px'}}>If you are registering in October 10th batch, it will be FREE!</strong>
+                <strong style={{ color: "#00FF00", fontSize: "18px" }}>
+                  If you are registering in November 6th,2025 batch, it will be
+                  FREE!
+                </strong>
                 <br></br>
                 Solo Trader Tamil community includes three groups
                 <br></br>
-                <img src={community} alt="Community" style={{width: '100%', maxWidth: '300px', height: 'auto', margin: '10px 0', borderRadius: '8px'}} />
+                <img
+                  src={community}
+                  alt="Community"
+                  style={{
+                    width: "100%",
+                    maxWidth: "300px",
+                    height: "auto",
+                    margin: "10px 0",
+                    borderRadius: "8px",
+                  }}
+                />
                 <ul className="community">
-                  <li>STT - Common [General information and two weeks once sunday morning 11.30 am weekend meeting]</li>
-                  <li>STT - Options [Everyday levels info and one entry info will be posted]</li>
-                  <li>STT - Swing [Stocks which are ready to take swing entries will be posted]</li>
+                  <li>
+                    STT - Common [General information and two weeks once sunday
+                    morning 11.30 am weekend meeting]
+                  </li>
+                  <li>
+                    STT - Options [Everyday levels info and one entry info will
+                    be posted]
+                  </li>
+                  <li>
+                    STT - Swing [Stocks which are ready to take swing entries
+                    will be posted]
+                  </li>
                 </ul>
               </h4>
             </AdvancedCourseContent>
           </div>
-
-
 
           <div className="registration">
             <p>For registration message me in whatsapp</p>
