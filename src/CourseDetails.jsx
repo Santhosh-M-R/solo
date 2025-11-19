@@ -205,12 +205,13 @@ const CourseDetails = () => {
       <CourseMessage>
         <h2>Course Details</h2>
         <div className="course-info">
-          <p>Mode of training: Online via zoom</p>
+          <h3>Mode of training: Online via zoom</h3>
           {/* <p>Either you can take live classes or recorded classes</p> */}
 
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
+                <h2>NEXT BATCH : DEC 05th, 2025</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end to end live course </p>
                 <p>
@@ -282,13 +283,10 @@ const CourseDetails = () => {
               <div className="guidance">
                 <br></br>
                 ------------------------------------------
-                {/* <br></br>
-                Guidance and support in batch group only for 2 months
-                <br></br> */}
                 ------------------------------------------
                 <br></br>
-                For furthur Solo Trader Tamil community support check One time
-                premium subscription
+                For Solo Trader Tamil community support check One time premium
+                subscription
               </div>
             </AdvancedCourseContent>
           </div>
@@ -306,8 +304,8 @@ const CourseDetails = () => {
                 <s>Fee: ₹4,000 (one-time payment only) Get lifetime access</s>
                 <br></br>
                 <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                  If you are registering in November 6th,2025 batch, it will be
-                  FREE!
+                  If you are registering in Dec 5th,2025 batch, 50% offer which
+                  is ₹2,000 for students community support
                 </strong>
                 <br></br>
                 Solo Trader Tamil community includes three groups
