@@ -324,11 +324,12 @@ const CourseDetails = () => {
                 <ul className="community">
                   <li>
                     STT - Common [General information and two weeks once sunday
-                    morning 11.30 am weekend meeting]
+                    morning 11.30am weekend meeting]
                   </li>
                   <li>
                     STT - Options [Everyday levels info and one entry info will
-                    be posted]
+                    be posted, two weeks once nifty expiry day live google meet
+                    session with entry info]
                   </li>
                   <li>
                     STT - Swing [Stocks which are ready to take swing entries
