@@ -7,6 +7,65 @@ import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
+const curriculum = [
+  {
+    day: "Day 1",
+    topics: [
+      "Introduction to IPOs",
+      "Bull and Bear Market Trends",
+      "Stock Market Crashes/Corrections",
+      "How to Buy/Sell Shares",
+    ],
+  },
+  {
+    day: "Day 2",
+    topics: [
+      "Understanding How Investments Work",
+      "SIP vs. Lumpsum Investments",
+      "Investment During Bear Market/Stock Market Crash",
+      "Long-Term Investment in Stocks and Mutual Funds",
+      "Technical Analysis and Chart Reading",
+      "Fundamental Analysis of Stocks",
+    ],
+  },
+  {
+    day: "Day 3",
+    topics: [
+      "Options Basics + Double the Money Concept",
+      "Options - Trade Setup - Groww 4 chart",
+    ],
+  },
+  {
+    day: "Day 4",
+    topics: ["OI tool", "Market conditions"],
+  },
+  {
+    day: "Day 5",
+    topics: ["Level based entries", "Options - BTST Strategy"],
+  },
+  {
+    day: "Day 6",
+    topics: ["Volume-Based Swing Setup", "Swing Screener"],
+  },
+];
+
+const communityGroups = [
+  {
+    title: "STT - Common",
+    description:
+      "General information, plus a weekend meeting every two weeks (Sunday 11:30am)",
+  },
+  {
+    title: "STT - Options",
+    description:
+      "Everyday levels info and one entry info will be posted, two weeks once nifty expiry day live google meet session with entry info",
+  },
+  {
+    title: "STT - Swing",
+    description: "Stocks that are ready for swing entries are posted regularly",
+  },
+];
+
 const Logo = styled.img`
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -32,6 +91,47 @@ const CourseMessage = styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
+  }
+
+  .pricing-summary {
+    background: #eef1ff;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .pricing-summary p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .flow {
+    background: #f7fbff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .flow-item {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgba(102, 71, 242, 0.2);
+  }
+
+  .whatsapp-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
   }
 
   .live-course,
@@ -197,6 +297,25 @@ const AdvancedCourseContent = styled.div`
       padding: 12px;
     }
   }
+
+  .community-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .community-fee {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .combo-note {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #00ff00;
+  }
 `;
 
 const CourseDetails = () => {
@@ -206,6 +325,51 @@ const CourseDetails = () => {
         <h2>Course Details</h2>
         <div className="course-info">
           <h3>Mode of training: Online via zoom</h3>
+          <div className="pricing-summary">
+            <p>
+              <strong>Course fee only:</strong> ₹6,000
+            </p>
+            <p>
+              <strong>Community support only:</strong> ₹4,000
+            </p>
+            <p>
+              <strong>Combo offer:</strong> ₹8,000 for both course + community
+            </p>
+          </div>
+          <div className="flow">
+            <strong>Simple registration flow</strong>
+            <div className="flow-item">
+              <p>
+                <strong>Step 1:</strong> Choose whether you want the course, the
+                community, or the combo—each option is shown above.
+              </p>
+            </div>
+            <div className="flow-item">
+              <p>
+                <strong>Step 2:</strong> Pay ₹6,000 for course-only, ₹4,000 for
+                community-only <strong>(or ₹8,000 for the combo which includes both)</strong>.
+              </p>
+            </div>
+            <div className="flow-item">
+              <p>
+                <strong>Step 3:</strong> Message via WhatsApp for confirmation
+                and we will send you the relevant access details. Please pay the
+                chosen amount to 8778890619, then share the payment screenshot
+                on WhatsApp to confirm registration.
+              </p>
+            </div>
+          </div>
+          <div className="whatsapp-cta">
+            <Button
+              variant="contained"
+              href="https://api.whatsapp.com/send/?phone=918778890619&text&app_absent=0"
+              target="__blank"
+              style={{ background: "#00FF00" }}
+            >
+              <WhatsAppIcon style={{ marginRight: 6 }} />
+              Chat on WhatsApp
+            </Button>
+          </div>
           {/* <p>Either you can take live classes or recorded classes</p> */}
 
           <div className="live-course">
@@ -230,54 +394,16 @@ const CourseDetails = () => {
               <div className="class-content">
                 <h4>Contents:</h4>
                 <ul>
-                  <li>
-                    <strong>Day 1:</strong>
-                    <ul>
-                      <li>Introduction to IPOs</li>
-                      <li>Bull and Bear Market Trends</li>
-                      <li>Stock Market Crashes/Corrections</li>
-                      <li>How to Buy/Sell Shares</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Day 2:</strong>
-                    <ul>
-                      <li>Understanding How Investments Work</li>
-                      <li>SIP vs. Lumpsum Investments</li>
-                      <li>Investment During Bear Market/Stock Market Crash</li>
-                      <li>Long-Term Investment in Stocks and Mutual Funds</li>
-                      <li>Technical Analysis and Chart Reading</li>
-                      <li>Fundamental Analysis of Stocks</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Day 3:</strong>
-                    <ul>
-                      <li>Options Basics + Double the Money Concept</li>
-                      <li>Options - Trade Setup - Groww 4 chart</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Day 4:</strong>
-                    <ul>
-                      <li>OI tool</li>
-                      <li>Market conditions</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Day 5:</strong>
-                    <ul>
-                      <li>Level based entries</li>
-                      <li>Options - BTST Strategy</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Day 6:</strong>
-                    <ul>
-                      <li>Volume-Based Swing Setup</li>
-                      <li>Swing Screener</li>
-                    </ul>
-                  </li>
+                  {curriculum.map((session) => (
+                    <li key={session.day}>
+                      <strong>{session.day}:</strong>
+                      <ul>
+                        {session.topics.map((topic) => (
+                          <li key={topic}>{topic}</li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="guidance">
@@ -296,20 +422,17 @@ const CourseDetails = () => {
 
           <div className="both-course">
             <AdvancedCourseContent>
-              <h4>
-                Furthur Solo Trader Tamil students community support
-                <br></br>
-                One time premium subscription
-                <br></br>
-                <s>Fee: ₹4,000 (one-time payment only) Get lifetime access</s>
-                <br></br>
-                <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                  If you are registering in Dec 5th,2025 batch, 50% offer which
-                  is ₹2,000 for students community support
-                </strong>
-                <br></br>
-                Solo Trader Tamil community includes three groups
-                <br></br>
+              <div className="community-offer">
+                <h4>
+                  Furthur Solo Trader Tamil students community support
+                  <br />
+                  One time premium subscription
+                </h4>
+                <p className="community-fee">
+                  <strong>Community fee separately:</strong> ₹4,000 (lifetime
+                  access)
+                </p>
+                <p>Solo Trader Tamil community includes three groups</p>
                 <img
                   src={community}
                   alt="Community"
@@ -322,21 +445,13 @@ const CourseDetails = () => {
                   }}
                 />
                 <ul className="community">
-                  <li>
-                    STT - Common [General information and two weeks once sunday
-                    morning 11.30am weekend meeting]
-                  </li>
-                  <li>
-                    STT - Options [Everyday levels info and one entry info will
-                    be posted, two weeks once nifty expiry day live google meet
-                    session with entry info]
-                  </li>
-                  <li>
-                    STT - Swing [Stocks which are ready to take swing entries
-                    will be posted]
-                  </li>
+                  {communityGroups.map((group) => (
+                    <li key={group.title}>
+                      <strong>{group.title}:</strong> {group.description}
+                    </li>
+                  ))}
                 </ul>
-              </h4>
+              </div>
             </AdvancedCourseContent>
           </div>
 
