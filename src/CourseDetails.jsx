@@ -347,7 +347,8 @@ const CourseDetails = () => {
             <div className="flow-item">
               <p>
                 <strong>Step 2:</strong> Pay ₹6,000 for course-only, ₹4,000 for
-                community-only <strong>(or ₹8,000 for the combo which includes both)</strong>.
+                community-only{" "}
+                <strong>(or ₹8,000 for the combo which includes both)</strong>.
               </p>
             </div>
             <div className="flow-item">
@@ -375,7 +376,7 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>NEXT BATCH : DEC 05th, 2025</h2>
+                <h2>NEXT BATCH : Jan 01st, 2025</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end to end live course </p>
                 <p>
