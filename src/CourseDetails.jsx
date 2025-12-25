@@ -327,28 +327,35 @@ const CourseDetails = () => {
           <h3>Mode of training: Online via zoom</h3>
           <div className="pricing-summary">
             <p>
-              <strong>Course fee only:</strong> ₹6,000
+              <strong>Course fee:</strong> ₹6,000
             </p>
             <p>
-              <strong>Community support only:</strong> ₹4,000
-            </p>
-            <p>
-              <strong>Combo offer:</strong> ₹8,000 for both course + community
+              <strong>Course + Community support combo:</strong>{" "}
+              <s style={{ color: "#999" }}>₹10,000</s>{" "}
+              <strong style={{ color: "#00FF00", fontSize: "18px" }}>
+                ₹8,000
+              </strong>
+              <br />
+              <span style={{ fontSize: "14px", fontWeight: "normal" }}>
+                (Combo offer for Jan 1st, 2026 batch - Community support
+                available only for course students)
+              </span>
             </p>
           </div>
           <div className="flow">
             <strong>Simple registration flow</strong>
             <div className="flow-item">
               <p>
-                <strong>Step 1:</strong> Choose whether you want the course, the
-                community, or the combo—each option is shown above.
+                <strong>Step 1:</strong> Choose whether you want the course only
+                (₹6,000) or the course + community support combo (
+                <s>₹10,000</s> <strong>₹8,000 - Special offer for Jan 1st, 2026 batch</strong>). Note:
+                Community support is available only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
-                <strong>Step 2:</strong> Pay ₹6,000 for course-only, ₹4,000 for
-                community-only{" "}
-                <strong>(or ₹8,000 for the combo which includes both)</strong>.
+                <strong>Step 2:</strong> Pay ₹6,000 for course-only{" "}
+                <strong>or ₹8,000 for course + community combo</strong>.
               </p>
             </div>
             <div className="flow-item">
@@ -425,13 +432,21 @@ const CourseDetails = () => {
             <AdvancedCourseContent>
               <div className="community-offer">
                 <h4>
-                  Furthur Solo Trader Tamil students community support
+                  Solo Trader Tamil Community Support
                   <br />
-                  One time premium subscription
+                  <span style={{ fontSize: "16px", fontWeight: "normal" }}>
+                    (Available only for course students)
+                  </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Community fee separately:</strong> ₹4,000 (lifetime
-                  access)
+                  <strong>Combo offer for Jan 1st, 2026 batch:</strong>{" "}
+                  <s style={{ color: "#ccc" }}>₹10,000</s>{" "}
+                  <strong style={{ color: "#00FF00" }}>₹8,000</strong> for
+                  course + community
+                  <br />
+                  <span style={{ fontSize: "14px" }}>
+                    One-time payment for lifetime access
+                  </span>
                 </p>
                 <p>Solo Trader Tamil community includes three groups</p>
                 <img
