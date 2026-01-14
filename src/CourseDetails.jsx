@@ -330,15 +330,18 @@ const CourseDetails = () => {
               <strong>Course fee:</strong> ₹6,000
             </p>
             <p>
-              <strong>Course + Community support combo:</strong>{" "}
-              <s style={{ color: "#999" }}>₹10,000</s>{" "}
+              <strong>Community fee (one-time):</strong> ₹5,000
+            </p>
+            <p>
+              <strong>Pongal Special: Course + Community combo:</strong>{" "}
+              <s style={{ color: "#999" }}>₹11,000</s>{" "}
               <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                ₹8,000
+                ₹8,199
               </strong>
               <br />
               <span style={{ fontSize: "14px", fontWeight: "normal" }}>
-                (Combo offer for Jan 1st, 2026 batch - Community support
-                available only for course students)
+                (Limited-time Pongal offer for Jan 2026 batch - Community
+                support available only for course students)
               </span>
             </p>
           </div>
@@ -347,15 +350,19 @@ const CourseDetails = () => {
             <div className="flow-item">
               <p>
                 <strong>Step 1:</strong> Choose whether you want the course only
-                (₹6,000) or the course + community support combo (
-                <s>₹10,000</s> <strong>₹8,000 - Special offer for Jan 1st, 2026 batch</strong>). Note:
+                (₹6,000) or the Pongal special course + community support combo (
+                <s>₹11,000</s>{" "}
+                <strong>
+                  ₹8,199 - Pongal offer for Jan 2026 batch
+                </strong>
+                ). Note:
                 Community support is available only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
                 <strong>Step 2:</strong> Pay ₹6,000 for course-only{" "}
-                <strong>or ₹8,000 for course + community combo</strong>.
+                <strong>or ₹8,199 for Pongal combo (course + community)</strong>.
               </p>
             </div>
             <div className="flow-item">
@@ -383,7 +390,7 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>NEXT BATCH : Jan 01st, 2026</h2>
+                <h2>NEXT BATCH : Feb 06th, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end to end live course </p>
                 <p>
@@ -436,17 +443,21 @@ const CourseDetails = () => {
                   <br />
                   <span style={{ fontSize: "16px", fontWeight: "normal" }}>
                     (Available only for course students)
+                    <br />
+                    <strong>Fee: 5000 rs</strong>
+                    <span style={{ fontSize: "14px" }}>
+                      <br />
+                    One-time payment for lifetime access
+                  </span>
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Combo offer for Jan 1st, 2026 batch:</strong>{" "}
-                  <s style={{ color: "#ccc" }}>₹10,000</s>{" "}
-                  <strong style={{ color: "#00FF00" }}>₹8,000</strong> for
+                  <strong>Pongal combo offer for Feb 6th, 2026 batch:</strong>{" "}
+                  <s style={{ color: "#ccc" }}>₹11,000</s>{" "}
+                  <strong style={{ color: "#00FF00" }}>₹8,199</strong> for
                   course + community
                   <br />
-                  <span style={{ fontSize: "14px" }}>
-                    One-time payment for lifetime access
-                  </span>
+                  
                 </p>
                 <p>Solo Trader Tamil community includes three groups</p>
                 <img
