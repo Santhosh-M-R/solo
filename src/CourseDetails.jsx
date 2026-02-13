@@ -20,6 +20,26 @@ const curriculum = [
   {
     day: "Day 2",
     topics: [
+      "Market conditions",
+      "Options Basics",
+      "How options working",
+      "How to escape from trap"
+    ],
+  },
+  {
+    day: "Day 3",
+    topics: [
+      "Options - Trade Setup - Groww 4 chart",
+      "Levels based entries",
+    ],
+  },
+  {
+    day: "Day 4",
+    topics: ["OI tool", "Double the Money Concept"],
+  },
+  {
+    day: "Day 5",
+    topics: [
       "Understanding How Investments Work",
       "SIP vs. Lumpsum Investments",
       "Investment During Bear Market/Stock Market Crash",
@@ -27,21 +47,6 @@ const curriculum = [
       "Technical Analysis and Chart Reading",
       "Fundamental Analysis of Stocks",
     ],
-  },
-  {
-    day: "Day 3",
-    topics: [
-      "Options Basics + Double the Money Concept",
-      "Options - Trade Setup - Groww 4 chart",
-    ],
-  },
-  {
-    day: "Day 4",
-    topics: ["OI tool", "Market conditions"],
-  },
-  {
-    day: "Day 5",
-    topics: ["Level based entries", "Options - BTST Strategy"],
   },
   {
     day: "Day 6",
@@ -330,19 +335,14 @@ const CourseDetails = () => {
               <strong>Course fee:</strong> ₹6,000
             </p>
             <p>
-              <strong>Community fee (one-time):</strong> ₹5,000
+              <strong>Community fee (one-time):</strong> ₹6,000
             </p>
             <p>
-              <strong>Republic day Special: Course + Community combo:</strong>{" "}
-              <s style={{ color: "#999" }}>₹11,000</s>{" "}
+              <strong>Course + Community combo:</strong>{" "}
+              <s style={{ color: "#999" }}>₹12,000</s>{" "}
               <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                ₹8,199
+                ₹9,199
               </strong>
-              <br />
-              <span style={{ fontSize: "14px", fontWeight: "normal" }}>
-                (Limited-time Republic Day offer for Feb 6th, 2026 batch -
-                Community support available only for course students)
-              </span>
             </p>
           </div>
           <div className="flow">
@@ -350,30 +350,21 @@ const CourseDetails = () => {
             <div className="flow-item">
               <p>
                 <strong>Step 1:</strong> Choose whether you want the course only
-                (₹6,000) or the Republic Day special course + community support
-                combo (
-                <s>₹11,000</s>{" "}
-                <strong>
-                  ₹8,199 - Republic Day offer for Feb 6th, 2026 batch
-                </strong>
-                ). Note:
+                (₹6,000) or the course + community support combo (₹9,199). Note:
                 Community support is available only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
                 <strong>Step 2:</strong> Pay ₹6,000 for course-only{" "}
-                <strong>
-                  or ₹8,199 for Republic Day combo (course + community)
-                </strong>
-                .
+                <strong>or ₹9,199 for combo (course + community)</strong>.
               </p>
             </div>
             <div className="flow-item">
               <p>
                 <strong>Step 3:</strong> Message via WhatsApp for confirmation
                 and we will send you the relevant access details. Please pay the
-                chosen amount to 8778890619, then share the payment screenshot
+                chosen amount to 8778890619 through Gpay or paytm, then share the payment screenshot
                 on WhatsApp to confirm registration.
               </p>
             </div>
@@ -450,24 +441,17 @@ const CourseDetails = () => {
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Community fee (one-time):</strong> ₹5,000
+                  <strong>Community fee (one-time):</strong> ₹6,000
                   <br />
                   <span style={{ fontSize: "14px" }}>
                     One-time payment for lifetime access
                   </span>
                   <br />
                   <br />
-                  <strong>
-                    Republic Day Special combo offer for Feb 6th, 2026 batch:
-                  </strong>{" "}
-                  <s style={{ color: "#ccc" }}>₹11,000</s>{" "}
-                  <strong style={{ color: "#00FF00" }}>₹8,199</strong> for
+                  <strong>Combo offer (Course + Community):</strong>{" "}
+                  <s style={{ color: "#ccc" }}>₹12,000</s>{" "}
+                  <strong style={{ color: "#00FF00" }}>₹9,199</strong> for
                   course + community
-                  <br />
-                  <span style={{ fontSize: "14px", fontWeight: "normal" }}>
-                    (Limited-time Republic Day offer - Community support
-                    available only for course students)
-                  </span>
                 </p>
                 <p>Solo Trader Tamil community includes three groups</p>
                 <img
