@@ -335,13 +335,13 @@ const CourseDetails = () => {
               <strong>Course fee:</strong> ₹6,000
             </p>
             <p>
-              <strong>Community fee (one-time):</strong> ₹6,000
+              <strong>Community fee (one-time):</strong> ₹5,000
             </p>
             <p>
               <strong>Course + Community combo:</strong>{" "}
-              <s style={{ color: "#999" }}>₹12,000</s>{" "}
+              <s style={{ color: "#999" }}>₹11,000</s>{" "}
               <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                ₹8,899
+                ₹8,199
               </strong>
             </p>
           </div>
@@ -350,14 +350,14 @@ const CourseDetails = () => {
             <div className="flow-item">
               <p>
                 <strong>Step 1:</strong> Choose whether you want the course only
-                (₹6,000) or the course + community support combo (₹8,899). Note:
+                (₹6,000) or the course + community support combo (₹8,199). Note:
                 Community support is available only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
                 <strong>Step 2:</strong> Pay ₹6,000 for course-only{" "}
-                <strong>or ₹8,899 for combo (course + community)</strong>.
+                <strong>or ₹8,199 for combo (course + community)</strong>.
               </p>
             </div>
             <div className="flow-item">
@@ -441,7 +441,7 @@ const CourseDetails = () => {
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Community fee (one-time):</strong> ₹6,000
+                  <strong>Community fee (one-time):</strong> ₹5,000
                   <br />
                   <span style={{ fontSize: "14px" }}>
                     One-time payment for lifetime access
@@ -449,8 +449,8 @@ const CourseDetails = () => {
                   <br />
                   <br />
                   <strong>Combo offer (Course + Community):</strong>{" "}
-                  <s style={{ color: "#ccc" }}>₹12,000</s>{" "}
-                  <strong style={{ color: "#00FF00" }}>₹8,899</strong> for
+                  <s style={{ color: "#ccc" }}>₹11,000</s>{" "}
+                  <strong style={{ color: "#00FF00" }}>₹8,199</strong> for
                   course + community
                 </p>
                 <p>Solo Trader Tamil community includes three groups</p>
