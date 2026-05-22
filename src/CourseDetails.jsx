@@ -69,6 +69,14 @@ const communityGroups = [
     title: "STT - Swing",
     description: "Stocks that are ready for swing entries are posted regularly",
   },
+  {
+    title: "STT - Futures",
+    description: "Discussion on futures trading on coindcx",
+  },
+  {
+    title: "STT - chit chat",
+    description: "random discussion on market, sharing profit screenshots",
+  },
 ];
 
 const Logo = styled.img`
@@ -332,32 +340,26 @@ const CourseDetails = () => {
           <h3>Mode of training: Online via zoom</h3>
           <div className="pricing-summary">
             <p>
-              <strong>Course fee:</strong> ₹6,000
+              <strong>Course fee:</strong> ₹6,999 + 1 month community access
             </p>
             <p>
-              <strong>Community fee (one-time):</strong> ₹5,000
-            </p>
-            <p>
-              <strong>Course + Community combo:</strong>{" "}
-              <s style={{ color: "#999" }}>₹11,000</s>{" "}
-              <strong style={{ color: "#00FF00", fontSize: "18px" }}>
-                ₹8,899
-              </strong>
+              <strong>Community fee (from month 2):</strong> ₹999/month
             </p>
           </div>
           <div className="flow">
             <strong>Simple registration flow</strong>
             <div className="flow-item">
               <p>
-                <strong>Step 1:</strong> Choose whether you want the course only
-                (₹6,000) or the course + community support combo (₹8,899). Note:
-                Community support is available only for course students.
+                <strong>Step 1:</strong> Register for the course at ₹6,999 (includes
+                1 month community access). Note: Community support is available
+                only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
-                <strong>Step 2:</strong> Pay ₹6,000 for course-only{" "}
-                <strong>or ₹8,899 for combo (course + community)</strong>.
+                <strong>Step 2:</strong> Pay ₹6,999 for course registration. From
+                month 2 onward, community access is ₹999/month if you wish to
+                continue.
               </p>
             </div>
             <div className="flow-item">
@@ -385,12 +387,12 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>NEXT BATCH : May 08th, 2026</h2>
+                <h2>NEXT BATCH : June 05th, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end to end live course </p>
                 <p>
-                  Duration: 6 Days <br />
-                  Fee: 6000 rs
+                  Duration: 6 Days  + 2 days doubt session<br />
+                  Fee: ₹6,999 + 1 month community access
                 </p>
                 <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
@@ -421,8 +423,8 @@ const CourseDetails = () => {
                 ------------------------------------------
                 ------------------------------------------
                 <br></br>
-                For Solo Trader Tamil community support check One time premium
-                subscription
+                For Solo Trader Tamil community support: ₹999/month after the
+                first month (included with course fee)
               </div>
             </AdvancedCourseContent>
           </div>
@@ -441,19 +443,17 @@ const CourseDetails = () => {
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Community fee (one-time):</strong> ₹5,000
+                  <strong>Included with course:</strong> 1 month community access
+                  (with ₹6,999 course fee)
+                  <br />
+                  <br />
+                  <strong>Community fee (from month 2):</strong> ₹999/month
                   <br />
                   <span style={{ fontSize: "14px" }}>
-                    One-time payment for lifetime access
+                    Pay monthly to continue community access after the first month
                   </span>
-                  <br />
-                  <br />
-                  <strong>Combo offer (Course + Community):</strong>{" "}
-                  <s style={{ color: "#ccc" }}>₹11,000</s>{" "}
-                  <strong style={{ color: "#00FF00" }}>₹8,899</strong> for
-                  course + community
                 </p>
-                <p>Solo Trader Tamil community includes three groups</p>
+                <p>Solo Trader Tamil community includes five groups</p>
                 <img
                   src={community}
                   alt="Community"

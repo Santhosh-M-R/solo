@@ -55,7 +55,7 @@ const StudentsProfits = () => {
       <h2>My live trade recordings</h2>
       <div>
         <iframe
-          src="https://www.instagram.com/reel/C3osP0FPD05/embed/"
+          src="https://www.instagram.com/reel/DYWJ4n7RZ2l/embed/"
           width="400"
           height="500"
           frameborder="0"
