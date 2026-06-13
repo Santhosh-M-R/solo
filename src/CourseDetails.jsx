@@ -340,25 +340,25 @@ const CourseDetails = () => {
           <h3>Mode of training: Online via zoom</h3>
           <div className="pricing-summary">
             <p>
-              <strong>Course fee:</strong> ₹6,999 + 1 month community access
+              <strong>Course fee:</strong> ₹7,999 + 2 month community access
             </p>
             <p>
-              <strong>Community fee (from month 2):</strong> ₹999/month
+              <strong>Community fee (from month 3):</strong> ₹999/month
             </p>
           </div>
           <div className="flow">
             <strong>Simple registration flow</strong>
             <div className="flow-item">
               <p>
-                <strong>Step 1:</strong> Register for the course at ₹6,999 (includes
-                1 month community access). Note: Community support is available
+                <strong>Step 1:</strong> Register for the course at ₹7,999 (includes
+                2 month community access). Note: Community support is available
                 only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
-                <strong>Step 2:</strong> Pay ₹6,999 for course registration. From
-                month 2 onward, community access is ₹999/month if you wish to
+                <strong>Step 2:</strong> Pay ₹7,999 for course registration. From
+                month 3 onward, community access is ₹999/month if you wish to
                 continue.
               </p>
             </div>
@@ -387,12 +387,12 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>NEXT BATCH : June 05th, 2026</h2>
+                <h2>NEXT BATCH : July 02nd, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end to end live course </p>
                 <p>
-                  Duration: 6 Days  + 2 days doubt session<br />
-                  Fee: ₹6,999 + 1 month community access
+                  Duration: 8 Days (6 days concepts classes + 2 days doubt session)<br />
+                  Fee: ₹7,999 + 2 month community access
                 </p>
                 <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
@@ -423,8 +423,8 @@ const CourseDetails = () => {
                 ------------------------------------------
                 ------------------------------------------
                 <br></br>
-                For Solo Trader Tamil community support: ₹999/month after the
-                first month (included with course fee)
+                For Solo Trader Tamil community support: ₹999/month from the
+                third month (included with course fee)
               </div>
             </AdvancedCourseContent>
           </div>
@@ -444,13 +444,13 @@ const CourseDetails = () => {
                 </h4>
                 <p className="community-fee">
                   <strong>Included with course:</strong> 1 month community access
-                  (with ₹6,999 course fee)
+                  (with ₹7,999 course fee)
                   <br />
                   <br />
-                  <strong>Community fee (from month 2):</strong> ₹999/month
+                  <strong>Community fee (from month 3):</strong> ₹999/month
                   <br />
                   <span style={{ fontSize: "14px" }}>
-                    Pay monthly to continue community access after the first month
+                    Pay monthly to continue community access from the third month
                   </span>
                 </p>
                 <p>Solo Trader Tamil community includes five groups</p>
