@@ -337,10 +337,10 @@ const CourseDetails = () => {
       <CourseMessage>
         <h2>Course Details</h2>
         <div className="course-info">
-          <h3>Mode of training: Online via zoom</h3>
+          <h3>Mode of training: Online (recorded sessions until October 2026)</h3>
           <div className="pricing-summary">
             <p>
-              <strong>Course fee:</strong> ₹7,999 + 2 month community access
+              <strong>Course fee:</strong> ₹7,999 + 2 months community access
             </p>
             <p>
               <strong>Community fee (from month 3):</strong> ₹999/month
@@ -351,7 +351,7 @@ const CourseDetails = () => {
             <div className="flow-item">
               <p>
                 <strong>Step 1:</strong> Register for the course at ₹7,999 (includes
-                2 month community access). Note: Community support is available
+                2 months community access). Note: Community support is available
                 only for course students.
               </p>
             </div>
@@ -387,21 +387,29 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>NEXT BATCH : July 02nd, 2026</h2>
+                <h2>Until October 2026: Recorded Classes Only</h2>
                 <h3>Solo Trader Tamil</h3>
-                <p>Stock market end to end live course </p>
+                <p>Stock market end-to-end course (recorded sessions)</p>
                 <p>
-                  Duration: 8 Days (6 days concepts classes + 2 days doubt session)<br />
-                  Fee: ₹7,999 + 2 month community access
+                  Duration: 8 days (6 concept classes + 2 doubt sessions)
+                  <br />
+                  Fee: ₹7,999 + 2 months community access
                 </p>
-                <b>
+                <p>
+                  This is an 8-day course with 2 months of community support.
+                  There will be no live classes in August, September, or October
+                  2026. Recorded sessions will be provided during this period,
+                  along with community support. Doubts will be cleared in the
+                  recorded-session batch group.
+                </p>
+                {/* <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
                 </b>
                 <p className="timing">
                   Timings - 9pm to 10pm <br />
                   Recording will be provided <br />
                   for every class
-                </p>
+                </p> */}
               </div>
               <div className="class-content">
                 <h4>Contents:</h4>
@@ -443,7 +451,7 @@ const CourseDetails = () => {
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Included with course:</strong> 1 month community access
+                  <strong>Included with course:</strong> 2 months community access
                   (with ₹7,999 course fee)
                   <br />
                   <br />
