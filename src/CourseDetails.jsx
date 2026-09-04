@@ -337,7 +337,7 @@ const CourseDetails = () => {
       <CourseMessage>
         <h2>Course Details</h2>
         <div className="course-info">
-          <h3>Mode of training: Online (recorded sessions until October 2026)</h3>
+          <h3>Mode of training: Online</h3>
           <div className="pricing-summary">
             <p>
               <strong>Course fee:</strong> ₹7,999 + 2 months community access
@@ -387,9 +387,9 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>Until October 2026: Recorded Classes Only</h2>
+                <h2>Next batch starts: September 14, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
-                <p>Stock market end-to-end course (recorded sessions)</p>
+                <p>Stock market end-to-end course</p>
                 <p>
                   Duration: 8 days (6 concept classes + 2 doubt sessions)
                   <br />
@@ -397,10 +397,7 @@ const CourseDetails = () => {
                 </p>
                 <p>
                   This is an 8-day course with 2 months of community support.
-                  There will be no live classes in August, September, or October
-                  2026. Recorded sessions will be provided during this period,
-                  along with community support. Doubts will be cleared in the
-                  recorded-session batch group.
+                  Doubts will be cleared in the batch group.
                 </p>
                 {/* <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
