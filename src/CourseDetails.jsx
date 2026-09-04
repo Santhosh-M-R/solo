@@ -387,7 +387,7 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>Next batch starts: September 14, 2026</h2>
+                <h2>Next batch starts: September 14th, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end-to-end course</p>
                 <p>
