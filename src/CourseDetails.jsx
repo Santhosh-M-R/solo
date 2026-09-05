@@ -399,14 +399,14 @@ const CourseDetails = () => {
                   This is an 8-day course with 2 months of community support.
                   Doubts will be cleared in the batch group.
                 </p>
-                {/* <b>
+                <b>
                   Classes will be on <br /> Friday, saturday, sunday and monday
                 </b>
                 <p className="timing">
                   Timings - 9pm to 10pm <br />
                   Recording will be provided <br />
                   for every class
-                </p> */}
+                </p>
               </div>
               <div className="class-content">
                 <h4>Contents:</h4>
