@@ -35,7 +35,7 @@ const curriculum = [
   },
   {
     day: "Day 4",
-    topics: ["OI tool", "Double the Money Concept"],
+    topics: ["OI tool", "Order flow analysis", "Footprint"],
   },
   {
     day: "Day 5",
@@ -340,26 +340,22 @@ const CourseDetails = () => {
           <h3>Mode of training: Online</h3>
           <div className="pricing-summary">
             <p>
-              <strong>Course fee:</strong> ₹7,999 + 2 months community access
-            </p>
-            <p>
-              <strong>Community fee (from month 3):</strong> ₹999/month
+              <strong>Course fee:</strong> ₹8,899 + lifetime community access
             </p>
           </div>
           <div className="flow">
             <strong>Simple registration flow</strong>
             <div className="flow-item">
               <p>
-                <strong>Step 1:</strong> Register for the course at ₹7,999 (includes
-                2 months community access). Note: Community support is available
+                <strong>Step 1:</strong> Register for the course at ₹8,899 (includes
+                lifetime community access). Note: Community support is available
                 only for course students.
               </p>
             </div>
             <div className="flow-item">
               <p>
-                <strong>Step 2:</strong> Pay ₹7,999 for course registration. From
-                month 3 onward, community access is ₹999/month if you wish to
-                continue.
+                <strong>Step 2:</strong> Pay ₹8,899 for course registration. This
+                includes lifetime community access.
               </p>
             </div>
             <div className="flow-item">
@@ -387,16 +383,16 @@ const CourseDetails = () => {
           <div className="live-course">
             <AdvancedCourseContent>
               <div className="heading">
-                <h2>Next batch starts: September 14th, 2026</h2>
+                <h2>Next batch starts: November 5th, 2026</h2>
                 <h3>Solo Trader Tamil</h3>
                 <p>Stock market end-to-end course</p>
                 <p>
                   Duration: 8 days (6 concept classes + 2 doubt sessions)
                   <br />
-                  Fee: ₹7,999 + 2 months community access
+                  Fee: ₹8,899 + lifetime community access
                 </p>
                 <p>
-                  This is an 8-day course with 2 months of community support.
+                  This is an 8-day course with lifetime community support.
                   Doubts will be cleared in the batch group.
                 </p>
                 <b>
@@ -428,8 +424,8 @@ const CourseDetails = () => {
                 ------------------------------------------
                 ------------------------------------------
                 <br></br>
-                For Solo Trader Tamil community support: ₹999/month from the
-                third month (included with course fee)
+                For Solo Trader Tamil community support: lifetime access
+                (included with course fee)
               </div>
             </AdvancedCourseContent>
           </div>
@@ -448,15 +444,8 @@ const CourseDetails = () => {
                   </span>
                 </h4>
                 <p className="community-fee">
-                  <strong>Included with course:</strong> 2 months community access
-                  (with ₹7,999 course fee)
-                  <br />
-                  <br />
-                  <strong>Community fee (from month 3):</strong> ₹999/month
-                  <br />
-                  <span style={{ fontSize: "14px" }}>
-                    Pay monthly to continue community access from the third month
-                  </span>
+                  <strong>Included with course:</strong> lifetime community access
+                  (with ₹8,899 course fee)
                 </p>
                 <p>Solo Trader Tamil community includes five groups</p>
                 <img
